@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+<h1 id="atas"><marquee scrollamount="20"><font color="blue" face="ARIAL BLACK"></font></marquee></h1>
+
+   <h1>SEBLAK MAKANAN SEJUTA UMAT</h1>
+
+   <p><a href="#Seblak Khas Sunda">Seblak khas Sunda</a></p>
+   <p><a href="#Seblak Sirandu">Seblak Sirandu</a></p>
+<br>
+
+
+<h2 id="Seblak Khas Sunda">Seblak Khas Sunda</h2>
+
+   
+   <img src="seblak.png"width="500" hight="300">
+  <pre></pre>
+  Seblak adalah masakan khas Sunda yang berasal dari wilayah Parahyangan dengan cita rasa gurih 
+  dan pedas. Seblak umumnya terbuat dari kerupuk yang terdiri dari bawang putih dengan kencur.
+   Dalam Kamus Basa Sunda (2006)dijelaskan bahwa seblak, nyeblak: rasa haté dina waktu inget kana 
+   balai (ingat pada sesuatu yang kurang enak 
+di hati sehingga hati seperti tersengat). Kata seblak sendiri juga merupakan singkatan dari 
+segak dan nyegak
+Kedua istilah tersebut berasal dari bahasa Sunda yang artinya lebih kurang “menyengat”.
+Segak dan nyegak dalam rasa seblak dicirikan dengan penggunaan kencur
+
+  Jauh sebelum populer, pada tahun 1930 di Sumpiuh, Banyumas, Jawa Tengah telah ada kuliner mirip Seblak yang 
+bernama kerupuk godog (kerupuk udang yang direbus dengan diberi bumbu). Hanya saja, kerupuk godog memakai
+kerupuk udang dan tidak menggunakan kencur sebagai bumbunya, kerupuk godog juga punya sensasi kenyal seperti seblak,
+terlebih disajikan bersama bumbu kacang sebagai sambalnya.
+
+Seblak kini menjadi makanan yang digemari berbagai kalangan masyarakat. Seiring berkembangnya tren jajanan
+seblak tidak hanya disajikan dengan isian aslinya.Penjual seblak kini banyak yang menggunakan konsep prasmanan.
+Prasmanan merupakan konsep makanan seblak yang memungkinkan pelanggan untuk memilih sendiri berbagai 
+macam isian sebelum diolah oleh penjual. bisa mengambil
+dan memilih toping sendiri.
+<br>
+<br>
+<a href="#atas">kembali ke atas</a>
+
+
+
+<h3 id="Seblak Sirandu">Seblak Sirandu</h3>
+<pre></pre>
+<img src="seblak sirandu.webp"width="500" hight="300">
+<pre></pre>
+Oemah seblak yang berada di Sirandu menjadi tempat seblak yang sangat terkenal di Wonosobo.
+Seblak sirandu ini 
+memiliki rasa yang berbeda dengan seblak lainnya di Wonosobo.Kuahnya sangat terasa bumbunya sehinga banyak peminat.
+konsep seblak ini tidak prasmanan namun paketan,meskipun tidak menggunakan konsep prasmanan seperti saat 
+ini yang sedang ramai,seblak sirandu tetap ramai pembeli.
+<br>
+<br>
+<a href="https://www.instagram.com/_afifahhhhhh" target="blank"></a>
+
+
+<a href="#atas">kembali ke atas</a>
+
+
+
+
+<h1> KUNJUNGI JUGA AKUN MEDIA SOSIAL KAMI</h1>
+
+<p style="'color:white;"></p>
+  <a href="https://www.instagram.com/_afifaahhhhhh?igsh=YXA3Y2U0MTIkMWt4" target="blank">
+
+
+   <img src="instagram.webp" alt="instagram logo" style="width:60px; height60px;">
+  
+<a href="https://www.tiktok.com/flawfifah" target="blank"> 
+
+<img src="logo tiktok.png" alt="tiktok logo" style="width:60px; height:60px;">
+
+
+
+
+
+
+
+<h2>Kolom Komentar</h2>
+<style>
+ body {
+    front-family: Arial, sans-serif;
+ }
+.comment-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.comment-list {
+    margin-top: 20px;
+}
+.comment-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+</style>
+
+<div class="comment-box">
+    <h2>Tinggalkan Komentar</h2>
+    <textarea id="comment" placeholder="Tulis komentar Anda..."></textarea>
+    <button onclick="addComment()">Kirim Komentar</button>
+</div>
+
+<div class="comments-list" id="commentsList">
+    <h3>Komentar:</h3>
+</div>
+
+<script>
+function addComment() {
+            // Ambil nilai dari textarea
+            const commentText = document.getElementById("comment").value;
+            
+            // Cek apakah teks tidak kosong
+            if(commentText.trim() !== "") {
+                // Buat elemen paragraf baru untuk komentar
+                const newComment = document.createElement("div");
+                newComment.classList.add("comment-item");
+                newComment.textContent = commentText;
+
+                // Tambahkan komentar ke daftar
+                const commentsList = document.getElementById("commentsList");
+                commentsList.appendChild(newComment);
+
+                // Kosongkan kolom textarea setelah komentar ditambahkan
+                document.getElementById("comment").value = "";
+            } else {
+                alert("Kolom komentar tidak boleh kosong!");
+            }
+        }
+
+</script>
+</div>
+
+
+<br>
+<br>
